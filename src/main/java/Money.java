@@ -6,4 +6,11 @@ public class Money {
         return getClass() == money.getClass() && amount == money.amount;
     }
 
+    public static Dollar dollar(int amount) {
+        return new Dollar(amount);
+    }
+
+    public static Franc franc(int amount) {
+        return new Franc(amount);
+    }
 }
